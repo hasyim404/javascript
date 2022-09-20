@@ -8,14 +8,42 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <h1 class="mb-5 text-center">Data Gempa</h1>
+        <table class="table table-hover table-responsive table-striped table-bordered">
+            <thead class="table-warning">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Lokasi</th>
+                    <th scope="col">Skala</th>
+                    <th scope="col">Dampak</th>
+                </tr>
+            </thead>
+            <tbody id="datatable">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
     <script>
 
-
-        // bang arip undefinenya gamau ilang gatau caranya:(
+        let nomor = 0
         class Gempa {
             constructor(lokasi, skala) {
                 this.lokasi = lokasi;
                 this.skala = skala;
+
+                nomor++
+                this.nomor = nomor
             }
 
             getDampak() {
@@ -28,76 +56,44 @@
                 return this.dampakGempa;
             }
             infoGempa() {
-                // for (this.no in this.lokasi) {
-                document.write
-                    (`
-                    <tr>
-                        <td>#</td>
-                        <td>${this.lokasi}</td>
-                        <td>${this.skala}</td>
-                        <td>${this.getDampak()}</td>
-                    </tr>   
-                `);
-                // }
-
-
+                return `
+                <tr>
+                    <td>${this.nomor}</td>
+                    <td>${this.lokasi}</td>
+                    <td>${this.skala}</td>
+                    <td>${this.getDampak()}</td>
+                </tr>`;
             }
         }
 
-        
-            g1 = new Gempa('Jawa Barat', 2);
-            g2 = new Gempa('Jawa Timur', 5);
-            g3 = new Gempa('Jakarta', 4);
-            g4 = new Gempa('Bogor', 3);
-            g5 = new Gempa('Bandung', 7);
-            g6 = new Gempa('Papua', 12);
-            g7 = new Gempa('Tanggerang', 1);
-            g8 = new Gempa('Aceh', 5);
-            g9 = new Gempa('Sulawesi Utara', 4);
-            g10 = new Gempa('Kalimantan Tengah', 11);
 
+        g1 = new Gempa('Jawa Barat', 2);
+        g2 = new Gempa('Jawa Timur', 5.6);
+        g3 = new Gempa('Jakarta', 4);
+        g4 = new Gempa('Bogor', 3);
+        g5 = new Gempa('Bandung', 7.1);
+        g6 = new Gempa('Papua', 12);
+        g7 = new Gempa('Tanggerang', 1);
+        g8 = new Gempa('Aceh', 5);
+        g9 = new Gempa('Sulawesi Utara', 4);
+        g10 = new Gempa('Kalimantan Tengah', 11);
 
+        var dataTable = ""
 
+        dataTable += g1.infoGempa();
+        dataTable += g2.infoGempa();
+        dataTable += g3.infoGempa();
+        dataTable += g4.infoGempa();
+        dataTable += g5.infoGempa();
+        dataTable += g6.infoGempa();
+        dataTable += g7.infoGempa();
+        dataTable += g8.infoGempa();
+        dataTable += g9.infoGempa();
+        dataTable += g10.infoGempa();
+
+        document.getElementById("datatable").innerHTML = dataTable;
 
     </script>
-</head>
-
-<body>
-
-    <div class="container my-5">
-        <table class="table table-responsive table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Lokasi</th>
-                    <th scope="col">Skala</th>
-                    <th scope="col">Dampak</th>
-                </tr>
-            </thead>
-            <tbody>
-                <script>
-                    document.write(`
-                    ${g1.infoGempa()}
-                    ${g2.infoGempa()}
-                    ${g3.infoGempa()}
-                    ${g4.infoGempa()}
-                    ${g5.infoGempa()}
-                    ${g6.infoGempa()}
-                    ${g7.infoGempa()}
-                    ${g8.infoGempa()}
-                    ${g9.infoGempa()}
-                    ${g10.infoGempa()}
-                    `)
-                </script>
-            </tbody>
-        </table>
-    </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
