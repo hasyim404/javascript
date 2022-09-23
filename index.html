@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suara Binatang</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-center align-items-center pt-4">
+                <p class="fw-bold fs-1">OnClick JQuery - Suara Hewan</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="accordion" id="accordionExample">
+
+            <!-- Hewan Unggas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h4>Hewan Unggas</h4>
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start">
+                            <div id="ayam" class="card" style="width: 15rem;" onclick="ayam">
+                                <img id="ayam-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="ayam-text">
+                                    Ayam
+                                </div>
+                                <div id="ayam-subtext">
+                                    (Click Me)
+                                </div>
+
+                            </div>
+                            <div id="bebek" class="card mx-5" style="width: 15rem;" onclick="bebek">
+                                <img id="bebek-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="bebek-text">
+                                    Bebek
+                                </div>
+                                <div id="bebek-subtext">
+                                    (Click Me)
+                                </div>
+
+                            </div>
+                            <div id="burung" class="card" style="width: 15rem;" onclick="burung">
+                                <img id="burung-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="burung-text">
+                                    Burung
+                                </div>
+                                <div id="burung-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="angsa" class="card mx-5" style="width: 15rem;" onclick="angsa">
+                                <img id="angsa-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="angsa-text">
+                                    Angsa
+                                </div>
+                                <div id="angsa-subtext">
+                                    (Click Me)
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hewan Ternak -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4>Hewan Ternak</h4>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start">
+                            <div id="kuda" class="card" style="width: 15rem;">
+                                <img id="kuda-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="kuda-text">
+                                    Kuda
+                                </div>
+                                <div id="kuda-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="sapi" class="card mx-5" style="width: 15rem;">
+                                <img id="sapi-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="sapi-text">
+                                    Sapi
+                                </div>
+                                <div id="sapi-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="kambing" class="card" style="width: 15rem;">
+                                <img id="kambing-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="kambing-text">
+                                    Kambing
+                                </div>
+                                <div id="kambing-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <!-- <div id="kelinci" class="card mx-5" style="width: 15rem;">
+                                <img id="kelinci-img" src="img/bg-black.jpg" class="card-img-top"
+                                    alt="...">
+                                <div id="kelinci-text">
+                                    Kelinci
+                                </div>
+                                <div id="kelinci-subtext">
+                                    (Click Me)
+                                </div>
+                            </div> -->
+                            <div id="babi" class="card ms-5" style="width: 15rem;">
+                                <img id="babi-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="babi-text">
+                                    Babi
+                                </div>
+                                <div id="babi-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hewan Buas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4>Hewan Buas</h4>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-start">
+                            <div id="harimau" class="card" style="width: 15rem;">
+                                <img id="harimau-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="harimau-text">
+                                    Harimau
+                                </div>
+                                <div id="harimau-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="singa" class="card mx-5" style="width: 15rem;">
+                                <img id="singa-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="singa-text">
+                                    Singa
+                                </div>
+                                <div id="singa-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="macan" class="card" style="width: 15rem;">
+                                <img id="macan-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="macan-text">
+                                    Macan
+                                </div>
+                                <div id="macan-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="beruang" class="card mx-5" style="width: 15rem;">
+                                <img id="beruang-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="beruang-text">
+                                    Beruang
+                                </div>
+                                <div id="beruang-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+                            <div id="buaya" class="card" style="width: 15rem;">
+                                <img id="buaya-img" src="img/bg-black.jpg" class="card-img-top" alt="...">
+                                <div id="buaya-text">
+                                    Buaya
+                                </div>
+                                <div id="buaya-subtext">
+                                    (Click Me)
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <!-- Hewan Unggas -->
+        <div id="ayamtoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Ayam</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Ayam.mp3
+            </div>
+        </div>
+        <div id="bebektoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Bebek</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Bebek.mp3
+            </div>
+        </div>
+        <div id="burungtoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Burung</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Burung.mp3
+            </div>
+        </div>
+        <div id="angsatoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Angsa</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Angsa.mp3
+            </div>
+        </div>
+
+        <!-- Hewan Ternak -->
+        <div id="kudatoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Kuda</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Ayam Kuda.mp3
+            </div>
+        </div>
+        <div id="sapitoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Sapi</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Sapi.mp3
+            </div>
+        </div>
+        <div id="kambingtoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Kambing</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Kambing.mp3
+            </div>
+        </div>
+        <!-- <div id="kelincitoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Kelinci</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Kelinci.mp3
+            </div>
+        </div> -->
+        <div id="babitoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Babi</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Babi.mp3
+            </div>
+        </div>
+
+        <!-- Hewan Buas -->
+        <div id="harimautoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Harimau</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Harimau.mp3
+            </div>
+        </div>
+        <div id="singatoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Singa</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Singa.mp3
+            </div>
+        </div>
+        <div id="macantoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Macan</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Macan.mp3
+            </div>
+        </div>
+        <div id="beruangtoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Beruang</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Beruang.mp3
+            </div>
+        </div>
+        <div id="buayatoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/play-btn.png" style="width: 2rem;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Sedang mendengarkan Suara Buaya</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Memutar Suara Buaya.mp3
+            </div>
+        </div>
+    </div>
+
+    <footer class="card-footer p-2 text-muted bg-white">
+        Muhammad Ismail &copy; Copyright 2022 | #MSIB3
+    </footer>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/myjs-jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+    background-color: rgba(81, 131, 181, 0.278);
+    overflow-x: hidden;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(46, 179, 46, 0.677);
+}
+
+.accordion-button:focus {
+    border-color: red;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(123, 153, 205, 0.25);
+}
+
+#ayam,
+#bebek,
+#burung,
+#angsa,
+#kuda,
+#sapi,
+#kambing,
+#babi,
+#harimau,
+#singa,
+#macan,
+#beruang,
+#buaya {
+    cursor: pointer;
+}
+
+#ayam-text,
+#bebek-text,
+#burung-text,
+#angsa-text,
+#kuda-text,
+#sapi-text,
+#kambing-text,
+#babi-text,
+#harimau-text,
+#singa-text,
+#macan-text,
+#beruang-text,
+#buaya-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#ayam-subtext,
+#bebek-subtext,
+#burung-subtext,
+#angsa-subtext,
+#kuda-subtext,
+#sapi-subtext,
+#kambing-subtext,
+#babi-subtext,
+#harimau-subtext,
+#singa-subtext,
+#macan-subtext,
+#beruang-subtext,
+#buaya-subtext {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.426);
+    font-size: 15px;
+    font-style: italic;
+}
